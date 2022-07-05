@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e019e260-4e4c-4d9d-afda-18412ce43750" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/core_modules/images/Mask jonghoon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/images/UnMask Jonghoon_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/images/UnMask jonghoon_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/images/su1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/images/su2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/images/su3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_modules/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BVdOEHy5xvyBoz7b6S853U415R" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +35,11 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main_modules/images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_face_Recognition" />
@@ -76,5 +78,16 @@
       <updated>1656995152193</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

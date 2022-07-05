@@ -4,14 +4,16 @@ import cv2
 import numpy as np
 
 """
-    얼굴이 등록된 사람인지 여부를 판별하는 API
+    스트림으로 측정되는 얼굴이 등록된 얼굴인지 여부를 확인하는 모듈 
 """
 
 # Get a reference to webcam #0 (the default one)
 video_capture = cv2.VideoCapture(0)
 
 # STEP1: 저장된 이미지 모든 리스트(ALL)를 가져온다.
+# TODO: 추후 S3 혹은 저장된 공간에서 이미지를 가져옴.
 images = os.listdir("images")
+print(os.getcwd())
 print(images)
 
 # STEP2: 저장된 이미지를 인코딩 및 이름을 각각 지정 하는 배열
@@ -20,14 +22,30 @@ known_face_names = []
 
 # STEP3: Loop를 수행 하면서 비교 대상 파일 && 비교 대상 파일을 인코딩 함
 for image in images:
-    # STEP 3-1: 이미지 로드
-    current_image = face_recognition.load_image_file("images/" + image)
-    # STEP 3-2: 이미지 인코딩
-    current_image_encoded = face_recognition.face_encodings(current_image)[0]
-    # STEP 3-3: 등록된 사용자 이미지 (인코딩 값)를 배열에 넣음
-    known_face_encodings.append(current_image_encoded)
-    # STEP 3-3: 등록된 사용자 이름을 배열에 넣음
-    known_face_names.append(image.split('.')[0])
+
+    # STEP4: 이미지 일 경우만 수행을 한다.
+    if image.split('.')[1] == 'png' or 'jpeg' or 'jpg':
+
+        # STEP 4-1: 각각의 파일을 하나씩 가져옴
+        current_image = face_recognition.load_image_file("images/" + image)
+
+        face_landmarks_list = face_recognition.face_landmarks(current_image)
+
+        # 얼굴을 탐지한 경우 - 얼굴의 랜드마크가 존재하는 경우
+        if len(face_landmarks_list) > 0:
+            # STEP 3-2: 이미지 인코딩
+            current_image_encoded = face_recognition.face_encodings(current_image)[0]
+
+            print(current_image_encoded)
+            # STEP 3-3: 등록된 사용자 이미지 (인코딩 값)를 배열에 넣음
+            known_face_encodings.append(current_image_encoded)
+            # STEP 3-3: 등록된 사용자 이름을 배열에 넣음
+            known_face_names.append(image.split('.')[0])
+        else:
+            print("얼굴을 탐지 못하였습니다 ::: ", image.split('.')[0])
+    else:
+        print("이미지 파일이 아닙니다.")
+
 
 # 변수 초기화
 face_locations = []
@@ -61,7 +79,6 @@ while True:
 
             # Or instead, use the known face with the smallest distance to the new face
             face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
-            print(face_distances)
             best_match_index = np.argmin(face_distances)
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
