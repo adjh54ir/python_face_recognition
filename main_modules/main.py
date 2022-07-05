@@ -14,7 +14,7 @@ currentPath = os.getcwd()
 
 
 # STEP1: 저장된 이미지 모든 리스트(ALL)를 가져온다.
-images = os.listdir("core_modules/images")
+images = os.listdir("main_modules/images")
 print(images)
 
 # STEP2: 저장된 이미지를 인코딩 및 이름을 각각 지정 하는 배열
@@ -24,7 +24,7 @@ known_face_names = []
 # STEP3: Loop를 수행 하면서 비교 대상 파일 && 비교 대상 파일을 인코딩 함
 for image in images:
     # STEP 3-1: 이미지 로드
-    current_image = face_recognition.load_image_file("core_modules/images/" + image)
+    current_image = face_recognition.load_image_file("main_modules/images/" + image)
     # STEP 3-2: 이미지 인코딩
     current_image_encoded = face_recognition.face_encodings(current_image)[0]
     # STEP 3-3: 등록된 사용자 이미지 (인코딩 값)를 배열에 넣음
