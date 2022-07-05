@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e019e260-4e4c-4d9d-afda-18412ce43750" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/UnMask Jonghoon_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/images/UnMask Jonghoon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/UnMask jonghoon_1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main_modules/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
