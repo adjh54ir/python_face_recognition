@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e019e260-4e4c-4d9d-afda-18412ce43750" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_modules/images/UnMask Jonghoon_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/images/UnMask Jonghoon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_modules/images/UnMask jonghoon_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_modules/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/Mask jonghoon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/UnMask Jonghoon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/bong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/bong_mask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/bong_mask_white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/jakwang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/jakwang_unmask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/study.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/su1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/su2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_modules/images/su3.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/lee/Desktop/workspace/WHATNEED/python_face_Recognition",
+    "last_opened_file_path": "/Users/lee/Desktop/workspace/WHATNEED/python_face_recognition/main_modules/images",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
